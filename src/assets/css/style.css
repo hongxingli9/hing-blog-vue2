@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	padding-top: 50px;
+}
+
+.logo {
+	margin-bottom: 20px;
+}
+
+.logo, .global-nav {
+	text-align: center;
+}
+
+.global-nav li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 6px;
+}
+
+.global-nav li a, .global-nav li i {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #333;
+}
+
+.global-nav li i {
+	cursor: pointer;
+}
+
+.global-nav li.active a {
+	color: rgba(0, 0, 0, .45);
+}
+
+.container {
+	margin: 50px auto;
+	max-width: 1140px;
+	padding: 10px;
+	font-size: 1.6em;
+}
+
+.post-item {
+	background: #ebf0f0;
+	height: 240px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.topic-card, .hotPost-card {
+	background: #ccc;
+	height: 80px;
+	padding: 5px;
+	margin-bottom: 6px;
+}
+
+.post-item-wrap {
+	padding: 10px 10px 0;
+	position: relative;
+}
+
+.post-time {
+	color: #999;
+	float: right;
+}
+
+.category-link, .title-link {
+	transition: all 0.5s ease-in-out;
+}
+
+.category-link {
+	color: #f88fb5;
+	font-weight: 700;
+}
+
+.category-link:hover {
+	color: #333;
+}
+
+.title-link-wrap {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.title-link {
+	font-weight: 800;
+	color: #333;
+}
+
+.title-link:hover {
+	color: #f88fb5;
+}
