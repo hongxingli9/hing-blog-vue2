@@ -10,6 +10,7 @@ html {
 
 a {
 	text-decoration: none;
+	color: #333;
 }
 
 header {
@@ -58,23 +59,31 @@ header {
 	margin-bottom: 20px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	padding: 6px 0;
+}
+
+.post-topics {
+	margin-bottom: 20px;
 }
 
 .topic-card, .hotPost-card {
 	background: #ccc;
 	height: 80px;
 	padding: 5px;
-	margin-bottom: 6px;
+	margin-bottom: 2px;
 }
 
 .post-item-wrap {
 	padding: 10px 10px 0;
 	position: relative;
+	height: 100%;
+	overflow: hidden;
 }
 
 .post-time {
 	color: #999;
 	float: right;
+
 }
 
 .category-link, .title-link {
@@ -97,9 +106,25 @@ header {
 
 .title-link {
 	font-weight: 800;
-	color: #333;
 }
 
-.title-link:hover {
+.title-link:hover, .topic-card a:hover{
 	color: #f88fb5;
+}
+
+.topic-card {
+	background: #ebf0f0;
+}
+
+.topic-card a {
+	display: block;
+	position: relative;
+	padding: 15px 0 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+.topic-card i {
+	font-size: 2.5em;
+	float: left;
+	margin-right: 20px;
 }

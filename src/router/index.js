@@ -19,6 +19,11 @@ export default new Router({
     		path: '/hot',
     		name: 'hotPosts',
     		component: () => import(/* webpackChunkName: "hotPosts" */ '@/pages/hot-posts.vue')
+    	},
+    	{
+    		path: '/article/:id',
+    		name: 'article',
+    		component: () => import(/* webpackChunkName: "articleView" */ '@/pages/article-view.vue')
     	}
   	]
 })
